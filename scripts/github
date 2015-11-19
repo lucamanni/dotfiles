@@ -1,0 +1,22 @@
+#!/bin/bash
+
+( sleep 0.5 && git config --global credential.helper cache )
+( sleep 0.5 && git config --global credential.helper 'cache --timeout=3600' )
+
+cd /media/Dati/Github/awesome
+( sleep 0.5 && git add . )
+( sleep 1 && git commit -m "Updated" )
+( sleep 5 && git pull )
+( sleep 5 && git push -u origin master )
+
+cd /media/Dati/Github/dotfiles
+( sleep 0.5 && git add . )
+( sleep 1 && git commit -m "Updated" )
+( sleep 5 && git pull )
+( sleep 5 && git push -u origin master )
+
+cd /media/Dati/Github/i3
+( sleep 0.5 && git add . )
+( sleep 1 && git commit -m "Updated" )
+( sleep 5 && git pull )
+( sleep 5 && git push -u origin master )
