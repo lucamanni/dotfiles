@@ -1,0 +1,45 @@
+! iv597 Xresources [colorscheme: chillaxed] http://github.com/iv597/dotz
+
+URxvt.scrollBar: off                                                    
+
+
+!URxvt.transparent: true
+!URxvt.shading: 50
+
+! The Essentials
+URxvt.background:    #000000
+URxvt.foreground:    #696969
+
+!Black
+URxvt.color0:	#292929
+URxvt.color8:	#595959
+
+!Red
+URxvt.color1:	#8c0707
+URxvt.color9:	#e60c0c
+URxvt.color1:  #A5372E
+URxvt.color9:  #E06C5C
+
+!Green
+URxvt.color2:	#24853c
+URxvt.color10:	#2abf4f
+
+!Yellow
+URxvt.color3:	#9e6144
+URxvt.color11:	#d9926c
+
+!Blue
+URxvt.color4:	#245880
+URxvt.color12:	#157da6
+
+!Magenta
+URxvt.color5:	#4c009e
+URxvt.color13:	#762bcc
+
+!Cyan
+URxvt.color6:	#227a7a
+URxvt.color14:	#4bccbb
+
+!White
+URxvt.color7:	#8c8c8c
+URxvt.color15:	#bfbfbf

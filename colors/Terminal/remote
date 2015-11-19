@@ -1,0 +1,69 @@
+xterm*VT100*Translations: #override \n\
+  BackSpace:     string(0x7f) \n\
+	  Delete:        string(0x1b) string("[3~")
+
+
+		!xterm*faceName: Bitstream Vera Sans Mono
+		!xterm*faceName: FreeMono
+		!xterm*faceSize: 16 
+		xterm*title: xterm
+		xterm*geometry: 80x30
+		xterm*activeIcon: false
+		xterm*iconFont: nil2
+		xterm*font: -xos4-terminus-medium-r-normal--24-240-72-72-c-120-iso10646-1
+		xterm*boldFont: -xos4-terminus-medium-r-normal--24-240-72-72-c-120-iso10646-1
+		xterm*boldMode: false
+		xterm*colorMode: true
+		!xterm*colorBDMode: true
+		!xterm*colorULMode: true
+		!xterm*colorBD: lightgreen
+		!xterm*colorUL: lightblue
+		xterm*color0: #000000
+		xterm*color1: #aa0000
+		xterm*color2: #00aa00
+		xterm*color3: #aa5500
+		xterm*color4: #0000aa
+		xterm*color5: #aa00aa
+		xterm*color6: #00aaaa
+		xterm*color7: #aaaaaa
+		xterm*color8: #555555
+		xterm*color9: #ff5555
+		xterm*color10: #55ff55
+		xterm*color11: #ffff55
+		xterm*color12: #7766ff
+		xterm*color13: #ff55ff
+		xterm*color14: #55ffff
+		xterm*color15: #ffffff
+		xterm*background: #000000
+		xterm*foreground: #B0C4DE
+		!xterm*foreground: #041690
+		xterm*highlightColor: #778899
+		xterm*highlightSelection: true
+		! xterm*pointerColor: white
+		! xterm*pointerColorBackground: white
+		xterm*eightBitInput: false
+		xterm*metaSendsEscape: true
+		xterm*saveLines: 10000
+		xterm*scrollKey: true
+		xterm*scrollBar: false
+		xterm*rightScrollBar: true
+		xterm*cutToBeginningOfLine: false
+		xterm*loginShell: true
+		!xterm*logging: true
+		xterm*cursesemul: false
+		xterm*backarrowKeyIsErase: false
+		xterm*ptyInitialErase: false
+		xterm*internalBorder: 10
+		xterm*transparent: true
+		xterm*charClass:  33:48,37:48,43:48,45-47:48,64:48,126:48,95:48
+
+		!
+		!    EMACS
+		!
+		!emacs22-gtk*background: #000000
+		!emacs22-gtk*foreground: #B0C4DE
+		!emacs22-gtk*pointerColor: 
+		!emacs22-gtk*cursorColor: 
+		emacs22-gtk*bitmapIcon: on
+		emacs22-gtk*font: -xos4-terminus-medium-r-normal--32-320-72-72-c-160-iso10646-1
+		emacs22-gtk*geometry: 80x25

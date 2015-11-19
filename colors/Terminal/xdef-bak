@@ -1,0 +1,88 @@
+!xterm*faceName:         Terminus:pixelsize=8
+XTerm*fastScroll: True
+xterm*faceName:					ohsnap:pixelsize=7
+Xft.autohint: 0
+Xft.antialias: 1
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.dpi: 96
+Xft.dpi: 100
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
+
+! color foreground: Wheat
+
+! Xft settings ---------------------------------------------------------------
+!Xft.dpi:                        96
+!Xft.antialias:                  true
+!Xft.rgba:                       rgb
+!Xft.hinting:                    true
+!Xft.hintstyle:                  hintslight
+
+!----------------------------------------------------------------------------!
+!									                                         !
+!	U R X V T - Settings						                             !
+!									                                         !
+!----------------------------------------------------------------------------!
+URxvt*geometry:					100x35
+!URxvt*borderLess:				false
+!URxvt*depth:					32
+!URxvt*scrollBar_right:			true
+!URxvt*font:					    xft:ohsnap-7
+!URxvt*boldFont:					xft:ohsnap-7
+!URxvt*font:		 -*-ohsnap-medium-*-*-*-11-*-*-*-*-*-*-*
+!URxvt*boldFont:         -*-ohsnap-bold-*-*-*-11-*-*-*-*-*-*-*
+!URxvt*font:             -*-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
+!URxvt*boldFont:         -*-terminus-bold-*-*-*-12-*-*-*-*-*-*-*
+!URxvt*font:             xft:tamsyn-8
+!URxvt*boldFont:	xft:tamsyn-8
+!URxvt*font:		xft:Anka/Coder Condensed-8
+!URxvt*boldFont:	xft:Anka/Coder Condensed-8
+!URxvt*font:		xft:terminusmodx-8
+!URxvt*boldFont:	xft:terminusmodx-8
+!URxvt*font:		xft:Anka/Coder-7
+!URxvt*font:		xft:bitocra7
+!URxvt*boldFont:	xft:bitocra7
+!URxvt*font:		xft:Envy Code R-8
+!URxvt*boldFont:	xft:Envy Code R-8
+!URxvt*font:		-*-proggysmall-medium-*-*-*-11-*-*-*-*-*-*-*
+!URxvt*font:		-*-montecarlo-medium-*-*-*-11-*-*-*-*-*-*-*
+!URxvt*boldFont:	-*-montecarlo-bold-*-*-*-11-*-*-*-*-*-*-*
+Urxvt*cursorColor:				white
+!URxvt*scrollColor:				#111111
+!Emacs.font:                                     -*--medium-*-*-*-11-*-*-*-*-*-*-*
+!Emacs.font:                                      xft:Anka/Coder Condensed-8
+URxvt*perl-ext-common:			default,clipboard-osc,matcher
+URxvt.scrollBar:				off
+!URxvt*termName:				 	rxvt-256color
+!URxvt.urlLauncher:			  /usr/bin/conkeror	
+!URxvt.matcher.button:			1
+!URxvt.urgentOnBell:  			true
+
+!-------------------------------------------------------------------------!
+!									                                      !
+!	U R X V T - Colors						                              !
+!									                                      !
+!-------------------------------------------------------------------------!
+
+!#include "/home/simon/colors/pnevma"
+!#include "/home/simon/colors/w0ng"
+!#include "/home/simon/colors/zen"
+!#include "/home/simon/colors/pimoncide"
+!#include "/home/simon/colors/iv597"
+!#include "/home/simon/colors/doom"
+!#include "/home/simon/colors/configs/colors/astromouse"
+!#include "/home/simon/colors/configs/colors/zenburn"
+!#include "/home/simon/colors/configs/colors/vimbrant"
+!#include "/home/simon/colors/configs/colors/technobass"
+!#include "/home/simon/colors/configs/colors/samtole"
+!#include "/home/simon/colors/configs/colors/rasi" 
+!#include "/home/simon/colors/configs/colors/milomouse"
+!#include "/home/simon/colors/configs/colors/mikado"
+!#include "/home/simon/colors/shinru"
+!#include "/home/simon/colors/gutterslob"
+!#include "/home/simon/colors/ivar" 
+!#include "/home/simon/colors/kexo"
+!#include "/home/simon/colors/ok100/gutter"
+!#include "/home/simon/colors/n1x4"
+#include "/home/simon/colors/ypnose"

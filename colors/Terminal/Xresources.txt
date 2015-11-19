@@ -1,0 +1,44 @@
+! Colors
+#include "/home/jente/.colors/ambiance"
+
+! Fonts
+URxvt*font: -*-ohsnap-medium-r-normal-*-11-*-*-*-*-*-*-*
+URxvt*boldFont: -*-ohsnap-medium-r-normal-*-11-*-*-*-*-*-*-*
+!URxvt.font:             -misc-fixed-medium-r-semicondensed--12-110-75-75-c-*-iso8859-2
+!URxvt.boldFont:         -misc-fixed-medium-r-semicondensed--12-110-75-75-c-*-iso8859-2
+!URxvt.italicFont:       -nil-profont-medium-r-normal--10-100-72-72-c-*-iso8859-1
+!URxvt.boldItalicFont:   -misc-fixed-medium-r-semicondensed--12-110-75-75-c-*-iso8859-2
+
+! URxvt (scrollstyle:  rxvt (default), plain, next, or xterm)
+URxvt*termName:          rxvt-unicode
+URxvt.saveLines:         1500
+URxvt*scrollBar:         false
+URxvt*scrollColor:       #2A2A2A
+URxvt*scrollstyle:       plain
+URxvt*scrollBar_right:   true
+URxvt.scrollKey:         true
+URxvt.scrollWithBuffer:  true
+URxvt.scrollBack:        true
+URxvt.jumpScroll:        true
+URxvt.skipScroll:        true
+URxvt.urgentOnBell:      true
+URxvt.trippleclickwords: true
+!URxvt.depth:             32
+!URxvt.shading:           15
+URxvt.transparent:       false
+URxvt.colorIT:           #444444
+URxvt.colorBD:           #FFFFFF
+URxvt.colorUL:           #FF8F00
+URxvt.colorRV:           #333333
+URxvt*chdir:             /home/jente/
+URxvt.letterSpace:       1
+
+! Extensions (tabbed)
+URxvt.perl-ext-common:   default,matcher
+URxvt.urlLauncher:       /usr/bin/chromium
+URxvt.matcher.button:    1
+URxvt.tabbed.tabbar-fg:  0
+URxvt.tabbed.tabbar-bg:  0
+URxvt.tabbed.tab-fg:     foreground
+URxvt.tabbed.tab-bg:     background
+URxvt.pasteableTabs:     false

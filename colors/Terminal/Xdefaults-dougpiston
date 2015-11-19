@@ -1,0 +1,81 @@
+!---------------------------------------------------------------------------!
+!                                                                           !
+!                               .Xdefaults                                  !
+! Author:       dougpiston                                                  !
+! Modified:     06/02/2012                                                  !
+! Colors:       JellyBeans                                                  !
+! From:         http://dotshare.it/dots/232/                                !
+!                                                                           !
+!---------------------------------------------------------------------------!
+
+
+! Xft settings ---------------------------------------------------------------
+Xft.dpi:                        96
+Xft.antialias:                  true
+Xft.rgba:                       rgb
+Xft.hinting:                    true
+Xft.hintstyle:                  hintslight
+
+!----------------------------------------------------------------------------!
+!									                                         !
+!	U R X V T - Settings						                             !
+!									                                         !
+!----------------------------------------------------------------------------!
+URxvt*geometry:					100x35
+URxvt*borderLess:				false
+URxvt*depth:					32
+URxvt*scrollBar_right:			true
+URxvt*font:					    xft:Montecarlo
+Urxvt*cursorColor:				white
+URxvt*scrollColor:				#111111
+URxvt*perl-ext-common:			default,clipboard,tabbed,matcher
+URxvt.scrollBar:				off
+URxvt.tabbed.tabbar-fg:			 7
+URxvt.tabbed.tabbar-bg: 		-1
+URxvt.tabbed.tab-fg:    		4
+URxvt.tabbed.tab-bg:    		-1	
+URxvt*termName:				 	rxvt-256color
+URxvt.urlLauncher:				/usr/bin/chromium
+URxvt.matcher.button:			1
+URxvt.urgentOnBell:  			true
+
+!-------------------------------------------------------------------------!
+!									                                      !
+!	U R X V T - Colors						                              !
+!									                                      !
+!-------------------------------------------------------------------------!
+
+*background:                     #121212
+*foreground:                     #ADADAD
+
+! black
+*color0:                         #1a1a1a
+*color8:                         #404040
+
+! red
+*color1:                         #d75f5f
+*color9:                         #EA8484
+
+! green
+*color2:                         #87af5f
+*color10:                        #C7F09F
+
+! yellow
+*color3:                         #ffaf5f
+*color11:                        #FFCC9A
+
+! blue
+*color4:                         #87afd7
+*color12:                        #a5caef
+
+! magenta
+*color5:                         #8787af
+*color13:                        #A6A6DE
+
+! cyan
+*color6:                         #5f8787
+*color14:                        #69b2b2
+
+! white
+*color7:                         #808080
+*color15:                        #d7d7d7

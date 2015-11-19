@@ -1,0 +1,31 @@
+!------------------------------------------------------------------------------
+! c o l o r - s e t t i n g s
+
+*background: #121212
+*foreground: #ffffff
+
+! Default
+! 0: black
+*color0:  #121212
+*color8:  #121212
+! 1: red
+*color1:  #ff7848
+*color9:  #ff4848
+! 2: green
+*color2:  #1fcb4a
+*color10: #1fcb4a
+! 3: yellow
+*color3:  #dfe32d
+*color11: #dfe32d
+! 4: blue
+*color4:  #2966b8
+*color12: #2966b8
+! 5: magenta
+*color5:  #f900f9
+*color13: #f900f9
+! 6: cyan
+*color6:  #62d0ff
+*color14: #62d0ff
+! 7: white
+*color7:  #ffffff
+*color15: #ffffff

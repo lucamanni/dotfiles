@@ -1,0 +1,56 @@
+! $Id: .Xresources,v 1.20 2007/08/31 13:26:22 artis Exp $
+!
+! /usr/X11R6/bin/xrdb -load ~/.Xresources
+! /bin/ln -sf ~/.Xresources ~/.Xdefaults
+!
+! You will need terminus font:
+! /usr/local/lib/X11/fonts/terminus/fonts.alias
+! charClass: URI to clip-board by double-click
+
+XTerm*loginShell:			true
+XTerm*allowSendEvents:			true
+XTerm*selectToClipboard:		true
+XTerm*eightBitInput:			false
+XTerm*multiScroll:			true
+XTerm*jumpScroll:			true
+XTerm*termName:				xterm-color
+XTerm*foreground:			gray
+XTerm*background:			black
+XTerm*scrollBar:			false
+XTerm*toolBar:				false
+XTerm*menuBar:				false
+XTerm*utmpDisplayId:			false
+XTerm*utmpInhibit:			false
+XTerm*internalBorder:			0
+XTerm*fontdefault:			ter-d24n
+XTerm*boldFont:				ter-d24b
+XTerm*font:				ter-d24n
+XTerm*font1:				ter-d24n
+XTerm*font2:				ter-d24n
+XTerm*font3:				ter-d24n
+XTerm*font4:				ter-d24n
+XTerm*font5:				ter-d24n
+XTerm*font6:				ter-d24n
+!XTerm*font:-*-fixed-medium-r-normal--28-280-72-72-c-140-iso8859-13
+XTerm*charClass:33:48,35:48,37-38:48,43-47:48,58:48,61:48,63-64:48,126:48
+
+XConsole*foreground:			gray
+XConsole*font:				ter-d24n
+
+XLock.mode:				marquee
+XLock.program:				/usr/games/fortune
+XLock.font:				ter-d24b
+XLock.mono:				true
+XLock.delay:				1
+XLock.description:			false
+XLock.timeelapsed:			false
+
+!xpdf.reverseVideo:			true
+xpdf.initialZoom:			width
+xpdf.Background:			black
+xpdf.fontList:				ter-d24n
+xpdf.urlCommand:			browser %s
+
+GV.antialias:				true
+
+*customization:				-color

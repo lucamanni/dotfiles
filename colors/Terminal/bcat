@@ -1,0 +1,28 @@
+URxvt.depth: 32
+! (default: brown / mint_green)
+URxvt.background: #1f1912
+URxvt.foreground: #d5fac8
+! (black: dark_brown / light_brown)
+URxvt.color0: #0a0806
+URxvt.color8: #816749
+! (red: red / pink)
+URxvt.color1: #d80450
+URxvt.color9: #ec6c99
+! (green: green / lime_green)
+URxvt.color2: #76bc20
+URxvt.color10: #94d900
+! (yellow: orange / yellow)
+URxvt.color3: #fbb32f
+URxvt.color11: #e5e339
+! (blue: blue / pastel_green)
+URxvt.color4: #3f91f1
+URxvt.color12: #d8ff84
+! (magenta: burnt_orange / lavender)
+URxvt.color5: #f63f05
+URxvt.color13: #e6a2f3
+! (cyan: pastel_blue / pastel_blue)
+URxvt.color6: #8ccdf0
+URxvt.color14: #8ccdf0
+! (white: brown / tan)
+URxvt.color7: #1f1912
+URxvt.color15: #fee3b4

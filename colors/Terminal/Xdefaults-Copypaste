@@ -1,0 +1,91 @@
+!---------------------------------------------------------------------------!
+!                                                                           !
+!                               .Xdefaults                                  !
+! Author:       dougpiston                                                  !
+! Modified:     06/02/2012                                                  !
+! Colors:       JellyBeans                                                  !
+! From:         http://dotshare.it/dots/232/                                !
+!                                                                           !
+!---------------------------------------------------------------------------!
+
+
+! Xft settings ---------------------------------------------------------------
+Xft.dpi:                        96
+Xft.antialias:                  true
+Xft.rgba:                       rgb
+Xft.hinting:                    true
+Xft.hintstyle:                  hintslight
+
+!----------------------------------------------------------------------------!
+!									                                         !
+!	U R X V T - Settings						                             !
+!									                                         !
+!----------------------------------------------------------------------------!
+URxvt*geometry:					100x35
+URxvt*borderLess:				false
+URxvt*depth:					32
+URxvt*scrollBar_right:			true
+URxvt*font:					    xft:ohsnap-7
+URxvt*boldFont:					xft:ohsnap-7
+Urxvt*cursorColor:				white
+URxvt*scrollColor:				#111111
+URxvt*perl-ext-common:			default,clipboard,matcher
+URxvt.scrollBar:				off
+URxvt.tabbed.tabbar-fg:			 7
+URxvt.tabbed.tabbar-bg: 		-1
+URxvt.tabbed.tab-fg:    		4
+URxvt.tabbed.tab-bg:    		-1	
+URxvt*termName:				 	rxvt-256color
+!URxvt.urlLauncher:			  /usr/bin/conkeror	
+URxvt.matcher.button:			1
+URxvt.urgentOnBell:  			true
+
+!-------------------------------------------------------------------------!
+!									                                      !
+!	U R X V T - Colors						                              !
+!									                                      !
+!-------------------------------------------------------------------------!
+
+!*background:                     #121212
+*background:										 #232323
+!*foreground:                     #ADADAD
+*foreground:										#6ca6cd
+
+! black
+!*color0:                         #1a1a1a
+*color0:												 #232323
+*color8:                         #2f4f4f
+
+! red
+*color1:                         #da70d6
+*color9:                         #ff69b4
+
+! green
+!*color2:                         #87af5f
+!*color10:                        #C7F09F
+
+*color2:													#6495ed
+*color10:													#87ceeb
+
+
+! yellow
+*color3:                         #f0e68c
+*color11:                        #bdb76b
+
+! blue
+*color4:                         #87afd7
+*color12:                        #a5caef
+
+! magenta
+*color5:                         #7fffd4
+*color13:                        #ff69b4
+
+! cyan
+*color6:                         #add8e6
+*color14:                        #87ceeb
+
+! white
+*color7:                         #afeeee
+*color15:                        #b0e0e6
+
+!#include "/home/simon/colors/meyithi2"

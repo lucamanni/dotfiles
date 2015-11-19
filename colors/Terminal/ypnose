@@ -1,0 +1,70 @@
+! file:     ~/.Xresources
+! author:   Ypnose - http://tetedulinuxien.fr
+
+! Colours ----------------------------------
+
+!*background: #14161b
+*background: #1a1c20
+!*background: #1c2027
+*foreground: #a7b9dc
+!*foreground: #b5c2dc
+*foreground: #b2cae3
+
+!-------------------------------------------
+
+! colorx: Normal
+! colory: Various / High intensity
+
+! Black
+*color0: #14161b
+*color8: #666666
+! Red
+*color1: #ea6a82
+*color9: #d2548f
+! Green
+*color2: #4a9b6c
+*color10: #6f9f09
+! Yellow
+*color3: #edc56f
+*color11: #dc8a48
+! Blue
+*color4: #3e7ef3
+*color12: #0387db
+! Magenta
+*color5: #7c4f9f
+*color13: #7e62b3
+! Cyan 
+*color6: #30a8e0
+*color14: #2dbfa9
+! White
+*color7: #8998a1
+*color15: #c0c0c0
+
+! URxvt ------------------------------------
+
+URxvt*termName: rxvt-unicode
+URxvt*geometry: 80x20
+URxvt*internalBorder: 6
+URxvt*saveLines: 250
+URxvt*cursorColor: #073642
+URxvt*cursorColor2: #edb36f
+
+! Fonts ------------------------------------
+
+!URxvt*font: -*-envypn-medium-*-*-*-*-*-*-*-*-*-*-*
+!URxvt*font: -*-marathonmod-medium-*-*-*-*-*-*-*-*-*-*-*
+!URxvt*font: xft:Envy Code R:pixelsize=10:antialias=true
+!URxvt*font: xft:Droid Sans Mono:style=Regular:pixelsize=13:antialias=false:hinting=true:hintstyle=hintslight
+!URxvt*font: -nil-profont-medium-r-normal--11-110-72-72-c-60-iso8859-1
+!URxvt*boldFont: -*-envypn-medium-*-*-*-*-*-*-*-*-*-*-*
+
+
+!xterm*facename: -*-envypn-medium-*-*-*-*-*-*-*-*-*-*-*
+
+! Border / Scrollbar -----------------------
+
+URxvt*scrollBar: off
+!URxvt*scrollstyle: plain
+!URxvt*scrollColor: #1D3242
+!URxvt*scrollBar_right: true
+!URxvt*scrollBar_floating: true

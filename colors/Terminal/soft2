@@ -1,0 +1,43 @@
+*background: #111111
+*foreground: #babdb6
+
+!---------------------
+! Negro + GrisObscuro
+!---------------------
+*color0:  #2D2D2D
+*color8:  #555753
+!--------------------
+! RojoObscuro + Rojo
+!--------------------
+*color1:  #C84065
+*color9:  #F26C91
+!----------------------
+! VerdeObscuro + Verde
+!----------------------
+*color2:  #70E252
+*color10: #95FC7B
+!----------------------------
+! AmarilloObscuro + Amarillo
+!----------------------------
+*color3:  #C8C039
+*color11: #D1CB79
+!--------------------
+! AzulObscuro + Azul
+!--------------------
+*color4:  #74D9EE
+*color12: #A0EAF9
+!---------------------------
+! MoradoObscuro + Morado
+!---------------------------
+*color5:  #9F61BA
+*color13: #C89BDC
+!-------------------
+!CyanObscuro + Cyan
+!-------------------
+*color6:  #7A9ECD
+*color14: #AAC1DE
+!---------------
+! Gris + Blanco
+!---------------
+*color7:  #D5DFE3
+*color15: #E4F8FF

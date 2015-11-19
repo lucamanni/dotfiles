@@ -1,0 +1,90 @@
+!colors
+*foreground:            #d3d3d3
+*background:            #232323
+*cursorColor:		orange
+*color0:		#151515
+*color8:		#505450
+*color1:		#bf7979
+*color9:		#f4a45f
+*color2:		#97b26b
+*color10:		#c5f779
+*color3:		#cdcda1
+*color11:		#ffffaf
+*color4:		#4a5463
+*color12:		#7d8794
+*color5:		#9c3885
+*color13:		#e628ba
+*color6:		#88aadd
+*color14:		#99ccff
+*color7:		#ffffff
+*color15:		#dedede
+
+!urxvt settings
+urxvt*geometry:         107x33
+urxvt*saveLines:        32767
+urxvt*scrollTtyKeypress:true
+urxvt*scrollTtyOutput:  false
+urxvt*scrollBar:        false
+urxvt*secondaryscroll:  true
+urxvt*loginShell:       true
+urxvt*internalBorder:   0
+urxvt*termName:         rxvt-unicode
+!urxvt*inheritPixmap:    true
+!urxvt*shading:          75
+!urxvt*tintColor:        #252525
+urxvt*font:             xft:Terminus:pixelsize=10
+!urxvt*cutchars:         "()*,<>[]{}|'
+urxvt*print-pipe:       cat > $(echo urxvt.dump.`date +'%Y%M%d%H%m%S'`)
+urxvt*secondaryScroll:  true
+urxvt*mapAlert:         true
+urxvt*utmpInhibit:      true
+!urxvt.perl-lib:         /usr/lib/urxvt/perl
+urxvt*perl-ext-common:  matcher,clipboard,searchable-scrollback
+urxvt*matcher.button:   1
+urxvt*urlLauncher:      firefox
+!urxvt*keysym.S-Prior:   ^[[5;2~
+!urxvt*keysym.S-Next:    ^[[6;2~
+
+!xterm colors
+xterm*foreground:       #d3d3d3
+xterm*background:       #000000
+xterm*cursorColor:      orange
+xterm*color0:           #151515
+xterm*color8:           #505450
+xterm*color1:           #bf7979
+xterm*color9:           #f4a45f
+xterm*color2:           #97b26b
+xterm*color10:          #c5f779
+xterm*color3:           #cdcda1
+xterm*color11:          #ffffaf
+xterm*color4:           #4a5463
+xterm*color12:          #7d8794
+xterm*color5:           #9c3885
+xterm*color13:          #e628ba
+xterm*color6:           #88aadd
+xterm*color14:          #99ccff
+xterm*color7:           #ffffff
+xterm*color15:          #dedede
+
+
+!xterm settings
+xterm*geometry:         107x33
+xterm*dynamicColors:    true
+xterm*utf8:             2
+xterm*eightBitInput:    true
+!xterm*saveLines:        32767 ! uses shitloads of mem
+xterm*scrollTtyKeypress:true
+xterm*scrollTtyOutput:  false
+xterm*scrollBar:        false
+xterm*loginShell:       true
+xterm*faceName:         Terminus:pixelsize=14
+xterm*jumpScroll:       true
+xterm*multiScroll:      true
+xterm*toolBar:          false
+xterm*charClass:        33:48,35-38:48,39:43,42-47:48,58-59:48,61:48,63-64:48,126:48
+
+Xcursor*theme: 		Neutral
+
+Xft*dpi:                96
+Xft*antialias:          true
+Xft*hinting:            full

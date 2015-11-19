@@ -1,0 +1,26 @@
+!------------ VisiTacky ------------!
+!BLACK
+URxvt*color0:               #666666
+URxvt*color8:               #999999
+!RED
+URxvt*color1:               #CC3366
+URxvt*color9:               #FF6699
+!GREEN
+URxvt*color2:               #66CC33
+URxvt*color10:              #99FF66
+!YELLOW
+URxvt*color3:               #CC9933
+URxvt*color11:              #FFCC66
+!BLUE
+URxvt*color4:               #3366CC
+URxvt*color12:              #6699FF
+!MAGENTA
+URxvt*color5:               #9933CC
+URxvt*color13:              #CC66FF
+!CYAN
+URxvt*color6:               #33CC99
+URxvt*color14:              #66FFCC
+!WHITE
+URxvt*color7:               #CCCCCC
+URxvt*color15:              #FFFFFF
+

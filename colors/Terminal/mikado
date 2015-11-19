@@ -1,0 +1,42 @@
+!*background:        #211708
+*foreground:        #5D6F74
+
+! mikado colors
+!black
+urxvt*color0:      #101010
+urxvt*color8:      #000000
+
+!*color0:    #322a2c
+!*color8:    #46423b
+!red
+*color1:                #4c64b5
+*color9:               #6b8dff
+!*color1:    #a04363
+!*color9:    #ae837a
+!green
+*color2 : #77b6c5
+*color10: #8fa7b9
+!*color2:    #9b9329
+!*color10:   #b4aa30
+!yellow
+!*color3:    #c77920
+!*color3:    #bf7a29
+!*color11:   #c7a551
+!urxvt*color3:      #f0dfaf
+!urxvt*color11:     #f0dfaf
+*color3:#395573
+*color11:#4779B3
+!blue
+*color4:    #6a8c8c
+*color12:   #74999e
+!magenta
+*color5:  #41B4A3
+*color13: #B6DEFB
+!*color5:    #856774
+!*color13:   #9c818e
+!cyan
+*color6:    #757978
+*color14:   #9fa590
+!white
+*color7:    #bcbcaf
+*color15:   #c1c4bc

@@ -1,0 +1,75 @@
+!urxvt*font:             xft:montecarlo:size=8
+urxvt*termName:         rxvt
+urxvt*background:       #0c0d0e
+urxvt*foreground:       #7f8f9f
+urxvt*scrollBar:        false
+urxvt*matcher.button:   1
+urxvt.transparent:    false
+urxvt*allow_bold:    true
+
+Xft*dpi:                96
+Xft*antialias:          true
+Xft*hinting:            full
+
+URxvt*geometry: 85x16
+URxvt*fading:        0
+URxvt*tintColor:     #ffffff
+URxvt*shading:        0
+URxvt*inheritPixmap:     False
+
+! black + red
+!urxvt*color0:     #3f3f3f
+urxvt*color0:      #101010
+urxvt*color1:      #705050
+! green + yellow
+urxvt*color2:      #60b48a
+urxvt*color3:      #f0dfaf
+! blue + purple
+urxvt*color4:      #506070
+urxvt*color5:      #dc8cc3
+! cyan + white
+urxvt*color6:      #8cd0d3
+urxvt*color7:      #dcdccc
+! bright-black + bright-red
+urxvt*color8:      #000000
+urxvt*color9:      #dca3a3
+! bright-green + bright-yellow
+urxvt*color10:     #c3bf9f
+urxvt*color11:     #f0dfaf
+! bright-blue + bright-purple
+urxvt*color12:     #94bff3
+urxvt*color13:     #ec93d3
+! bright-cyan + bright-white
+urxvt*color14:     #93e0e3
+urxvt*color15:     #ffffff
+!}}}
+
+! xscreensaver ---------------------------------------------------------------
+
+!font settings
+xscreensaver.Dialog.headingFont:        -*-dina-bold-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.bodyFont:           -*-dina-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.labelFont:          -*-dina-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.unameFont:          -*-dina-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.buttonFont:         -*-dina-bold-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.dateFont:           -*-dina-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.passwd.passwdFont:         -*-dina-bold-r-*-*-12-*-*-*-*-*-*-*
+!general dialog box (affects main hostname, username, password text)
+xscreensaver.Dialog.foreground:         #7f8f9f
+xscreensaver.Dialog.background:         #0c0d0e
+xscreensaver.Dialog.topShadowColor:     #0c0d0e
+xscreensaver.Dialog.bottomShadowColor:  #0c0d0e
+xscreensaver.Dialog.Button.foreground:  #0c0d0e
+xscreensaver.Dialog.Button.background:  #7f8f9f
+!username/password input box and date text colour
+xscreensaver.Dialog.text.foreground:    #0c0d0e
+xscreensaver.Dialog.text.background:    #7f8f9f
+xscreensaver.Dialog.internalBorderWidth:24
+xscreensaver.Dialog.borderWidth:        20
+xscreensaver.Dialog.shadowThickness:    2
+!timeout bar (background is actually determined by Dialog.text.background)
+xscreensaver.passwd.thermometer.foreground:  #7f8f9f
+xscreensaver.passwd.thermometer.background:  #0c0d0e
+xscreensaver.passwd.thermometer.width:       10
+!datestamp format--see the strftime(3) manual page for details
+xscreensaver.dateFormat:    %I:%M%P %a %b %d, %Y
