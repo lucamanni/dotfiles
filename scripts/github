@@ -20,7 +20,7 @@ cd /media/Dati/Github/dotfiles
 
 echo "==> Working on I3 Repo"
 sudo rm -rv /media/Dati/Github/i3/*
-cp -R .config/i3/* /media/Dati/Github/i3
+cp -Rv /home/luca/.config/i3/* /media/Dati/Github/i3
 cd /media/Dati/Github/i3
 ( sleep 0.5 && git add . )
 ( sleep 1 && git commit -m "Updated" )
