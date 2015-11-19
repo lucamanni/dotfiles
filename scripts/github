@@ -1,22 +1,30 @@
 #!/bin/bash
 
+echo "==> Caching password"
 ( sleep 0.5 && git config --global credential.helper cache )
 ( sleep 0.5 && git config --global credential.helper 'cache --timeout=3600' )
 
+echo "==> Working on Awesome Repo"
 cd /media/Dati/Github/awesome
 ( sleep 0.5 && git add . )
 ( sleep 1 && git commit -m "Updated" )
 ( sleep 5 && git pull )
 ( sleep 5 && git push -u origin master )
 
+echo "==> Working on Dotfiles Repo"
 cd /media/Dati/Github/dotfiles
 ( sleep 0.5 && git add . )
 ( sleep 1 && git commit -m "Updated" )
 ( sleep 5 && git pull )
 ( sleep 5 && git push -u origin master )
 
+echo "==> Working on I3 Repo"
 cd /media/Dati/Github/i3
 ( sleep 0.5 && git add . )
 ( sleep 1 && git commit -m "Updated" )
 ( sleep 5 && git pull )
 ( sleep 5 && git push -u origin master )
+
+sleep 1
+
+echo "==> Done!"
