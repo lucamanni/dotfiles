@@ -1,0 +1,19 @@
+#!/bin/bash
+
+DISK=`sudo hddtemp /dev/sda | cut -c 36-37`
+CORE0=`sensors | grep Core\ 0 | cut -c 16-17`
+CORE2=`sensors | grep Core\ 2 | cut -c 16-17`
+COREHIGH=`sensors | grep Core\ 0 | cut -c 34-35`
+CORECRIT=`sensors | grep Core\ 0 | cut -c 51-53`
+#GPU=`sensors | grep temp1 | cut -c 16-17`
+FREQ_NOW=`sudo cpupower frequency-info | grep "la frequenza attuale" | cut -c 37-40`
+FREQ_MIN=`sudo cpupower frequency-info | grep "limiti hardware" | cut -c 20-23`
+FREQ_MAX=`sudo cpupower frequency-info | grep "limiti hardware" | cut -c 31-34`
+GOVERNOR=`cat /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor`
+
+echo -e "Prof:""\t"" $GOVERNOR ";
+echo -e "Fan:""\t"" $FREQ_NOW ""\t""   Min: ""$FREQ_MIN  ""\t"" Max: ""$FREQ_MAX";
+echo -e "Core0:""\t"" $CORE0 C""\t""   High:"" $COREHIGH C""\t"" Crit:"" $CORECRIT C";
+echo -e "Core2:""\t"" $CORE2 C""\t""   High:"" $COREHIGH C""\t"" Crit:"" $CORECRIT C";
+#echo -e "Gpu:""\t"" $GPU C""\t""   Amd/Ati""\t"" Radeon";
+echo -e "Disk:""\t"" $DISK C""\t""   Hitachi""\t"" HTS545032B9SA00";

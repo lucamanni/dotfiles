@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo modprobe uvcvideo
+recordmydesktop --no-frame
+sudo modprobe -r uvcvideo

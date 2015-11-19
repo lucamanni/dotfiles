@@ -1,0 +1,7 @@
+#!/bin/sh
+
+cd /media/Data/Dropbox/Photos/Webcam
+sudo modprobe uvcvideo
+mplayer tv:// -tv driver=v4l2:width=320:height=240:device=/dev/video0 -title 'Small Webcam' -fps 25 -vf screenshot
+sudo modprobe -r uvcvideo
+cd

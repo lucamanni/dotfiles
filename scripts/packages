@@ -1,0 +1,36 @@
+#!/bin/sh
+
+ALL=`pacman -Q | wc | cut -c 1-8`
+EXPL=`pacman -Qe | wc | cut -c 1-8`
+AUR=`pacman -Qm | wc | cut -c 1-8`
+#COMMUNITY=`yaourt -Q | grep community | wc | cut -c 1-8`
+#CORE=`yaourt -Q | grep core | wc | cut -c 1-8`
+#EXTRA=`yaourt -Q | grep extra | wc | cut -c 1-8`
+#MULTILIB=`yaourt -Q | grep multilib | wc | cut -c 1-8`
+
+echo "  "
+echo -e "\e[01;31m $ALL\e[0;0m" Total;
+echo -e "\e[01;33m $EXPL\e[0;0m" Explicit;
+echo -e "\e[01;32m $AUR\e[0;0m" Aur;
+#echo -e "\e[01;34m $COMMUNITY\e[0;0m" Community;
+#echo -e "\e[01;34m $CORE\e[0;0m" Core;
+#echo -e "\e[01;34m $EXTRA\e[0;0m" Extra;
+#echo -e "\e[01;35m $MULTILIB\e[0;0m" Multilib;
+echo "  "
+echo "Saving lists..."
+
+DIRECTORY="/media/Data/Dropbox/Computer/Linux/Packages"
+
+sudo rm -rf $DIRECTORY/*
+pacman -Q | sort > $DIRECTORY/all
+pacman -Q | sort > $DIRECTORY/explicit
+pacman -Qm > $DIRECTORY/aur
+#yaourt -Q | grep community > $DIRECTORY/community
+#yaourt -Q | grep core > $DIRECTORY/core
+#yaourt -Q | grep extra > $DIRECTORY/extra
+#yaourt -Q | grep multilib > $DIRECTORY/multilib
+
+echo "  "
+echo "Done!"
+echo "  "
+exit 0

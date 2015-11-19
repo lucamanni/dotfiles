@@ -1,0 +1,8 @@
+#!/bin/bash
+
+systemctl stop tor
+#systemctl stop pdnsd-tor
+killall polipo
+#systemctl start pdnsd
+#polipo daemonise=true logFile="/var/log/polipo.log"
+#sh /home/luca/.scripts/setdnsgoogle

@@ -1,0 +1,38 @@
+#!/bin/bash
+
+DISK=`sudo hddtemp /dev/sda | cut -c 36-37`
+CORE0=`sensors | grep Core\ 0 | cut -c 16-17`
+CORE2=`sensors | grep Core\ 2 | cut -c 16-17`
+COREHIGH=`sensors | grep Core\ 0 | cut -c 34-35`
+CORECRIT=`sensors | grep Core\ 0 | cut -c 51-53`
+#GPU=`sensors | grep temp1 | cut -c 16-17`
+#FREQ_NOW=`sudo cpupower frequency-info | grep current\ CPU | cut -c 28-31`
+#FREQ_MIN=`sudo cpupower frequency-info | grep current\ policy | cut -c 46-49`
+#FREQ_MAX=`sudo cpupower frequency-info | grep current\ policy | cut -c 59-62`
+FREQ_NOW=`sudo cpupower frequency-info | grep "la frequenza attuale" | cut -c 37-40`
+FREQ_MIN=`sudo cpupower frequency-info | grep "limiti hardware" | cut -c 20-23`
+FREQ_MAX=`sudo cpupower frequency-info | grep "limiti hardware" | cut -c 31-34`
+GOVERNOR=`cat /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor`
+
+red=$'\e[0;31m'
+redb=$'\e[1;31m'
+
+green=$'\e[0;32m'
+greenb=$'\e[1;32m'
+
+yellow=$'\e[0;33m'
+yellowb=$'\e[1;33m'
+
+blue=$'\e[0;34m'
+blueb=$'\e[1;34m'
+
+off=$'\e[0;0m'
+
+#echo ""
+echo -e "$blue Prof:$off""\t""$blueb $GOVERNOR $off";
+echo -e "$blue Fan:$off""\t""$blueb $FREQ_NOW $off""\t""$yellow   Min: $off""$yellowb $FREQ_MIN$off""\t""$red Max: $off""$redb $FREQ_MAX$off";
+echo -e "$blue Core0:$off""\t""$blueb $CORE0 C$off""\t""$yellow   High:$off""$yellowb $COREHIGH C$off""\t""$red Crit:$off""$redb $CORECRIT C$off";
+echo -e "$blue Core2:$off""\t""$blueb $CORE2 C$off""\t""$yellow   High:$off""$yellowb $COREHIGH C$off""\t""$red Crit:$off""$redb $CORECRIT C$off";
+#echo -e "$blue Gpu:$off""\t""$blueb $GPU C$off""\t""$greenb   Amd/Ati$off""\t""$greenb Radeon$off";
+echo -e "$blue Disk:$off""\t""$blueb $DISK C$off""\t""$greenb   Hitachi$off""\t""$greenb HTS545032B9SA00$off";
+#echo ""

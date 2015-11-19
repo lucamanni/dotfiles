@@ -1,0 +1,3 @@
+#!/bin/bash
+
+dfc -d | grep /dev/sda && dfc -d | grep /dev/sdb

@@ -1,0 +1,5 @@
+1 #!/bin/bash
+2 FILENAME=$(scrot $1 $2 $3 '%Y%m%d$-%H%M%S.png' -e 'echo $f')
+3 mv ~/$FILENAME ~/Dropbox/Public/screens/
+4 LINK=$(dropbox puburl ~/Dropbox/Public/screens/$FILENAME)
+5 eval "echo $LINK | xclip -selection clipboard"

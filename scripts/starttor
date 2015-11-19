@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#systemctl stop pdnsd
+killall polipo
+#systemctl start pdnsd-tor
+polipo -c /etc/polipo/config-tor daemonise=true logFile="/var/log/polipo.log"
+systemctl start tor
+#sh /home/luca/.scripts/setdnstor
