@@ -1,0 +1,13 @@
+# Write your default config options here!
+
+o=alsa
+nolirc=yes
+alang=it
+softvol=1
+softvol-max=4000
+volstep=1
+#volume=100
+#aspect=2
+subfont-text-scale=4
+subfont-osd-scale=3
+#subfont-autoscale=0
