@@ -19,6 +19,7 @@ varname() {
     env[12]="GTK: "
     env[13]="Icons: "
     env[14]="Cursor: "
+    env[15]="Website: "
 }
 
 # Sets the data.
@@ -27,18 +28,19 @@ vardata() {
     dat[2]="$SHELL"
     dat[3]="$EDITOR"
     dat[4]="$(uname -r)"
-    dat[5]="Intel(R) Core(TM) i5 CPU M 450 @ 2.40GHz"
-    dat[6]="4 GB DDR3 1066Mhz" 
+    dat[5]="4X Intel(R) Core(TM) i5 CPU M 480 @ 2.67GHz"
+    dat[6]="4 GB" 
     # Explicitly installed packages.
     dat[7]="$(pacman -Qqe | wc -l)"
     # Foreign packages.
     dat[8]="$(pacman -Qqm | wc -l)"
     dat[9]="$TERM"
-    dat[10]="$(awesome -v | head -1)"
-    dat[11]="github.com/copycat-killer/awesome-copycats"
+    dat[10]="i3"
+    dat[11]="Full Color i3"
     dat[12]="$(more ~/.gtkrc-2.0 | grep gtk-theme-name | cut -d"=" -f2 | cut -d'"' -f2)"
     dat[13]="$(more ~/.gtkrc-2.0 | grep gtk-icon-theme | cut -d"=" -f2 | cut -d'"' -f2)"
-    dat[14]="Vanilla-DMZ-AA"
+    dat[14]="Adwaita"
+    dat[15]="https://github.com/lucamanni"
 }
 
 # Allows for changing the data value of a variable. If the label does not
@@ -167,18 +169,21 @@ setart() {
            art[15]='       distribution           '
             ;;
         graffiti)
-            art[1]='   _____                .__        '
-            art[2]='  /  _  \_______   ____ |  |__     '
-            art[3]=' /  /_\  \_  __ \_/ ___\|  |  \    '
-            art[4]='/    |    \  | \/\  \___|   Y  \   '
-            art[5]='\____|__  /__|    \___  >___|  /   '
-            art[6]='        \/            \/     \/    '
-            art[7]='.____    .__                       '
-            art[8]='|    |   |__| ____  __ _____  ___  '
-            art[9]='|    |   |  |/    \|  |  \  \/  /  '
-           art[10]='|    |___|  |   |  \  |  />    <   '
-           art[11]='|_______ \__|___|  /____//__/\_ \  '
-           art[12]='        \/       \/            \/  '
+            art[1]='                                   '
+            art[2]='   _____                .__        '
+            art[3]='  /  _  \_______   ____ |  |__     '
+            art[4]=' /  /_\  \_  __ \_/ ___\|  |  \    '
+            art[5]='/    |    \  | \/\  \___|   Y  \   '
+            art[6]='\____|__  /__|    \___  >___|  /   '
+            art[7]='        \/            \/     \/    '
+            art[8]='.____    .__                       '
+            art[9]='|    |   |__| ____  __ _____  ___  '
+           art[10]='|    |   |  |/    \|  |  \  \/  /  '
+           art[11]='|    |___|  |   |  \  |  />    <   '
+           art[12]='|_______ \__|___|  /____//__/\_ \  '
+           art[13]='        \/       \/            \/  '
+           art[14]='                                   '
+           art[15]='                                   '
             ;;
         poison)
             art[1]=' @@@@@@   @@@@@@@    @@@@@@@  @@@  @@@  '
