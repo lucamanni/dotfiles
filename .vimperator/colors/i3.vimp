@@ -1,0 +1,131 @@
+" ==Vimperator_Color_Scheme==
+" name: i3
+
+hi StatusLine           height: 20px; -moz-appearance: statusbar;
+hi StatusLine           color: #ecedee; background: #242C33; font-family: tewi; font-size: 9pt;
+
+hi Normal               color: #ecedee; background: #242C33; font-family: tewi; font-size: 9pt;
+hi CmdLine              background: #242C33; color: #ecedee; font-family: tewi; padding: 1px; font-size: 9pt;
+hi CmdLine>*            font-family: tewi; font-size: 9pt;
+
+hi CompDesc             color: #808080; width: 50%;
+hi CompIcon             width: 16px; min-width: 16px; display: inline-block; margin-right: .5ex;
+hi CompItem[selected]   color: #ffaf5f; background: #242C33; font-weight: bold;
+hi CompMsg              font-style: italic; margin-left: 16px;
+hi CompResult           width: 45%; overflow: hidden;
+hi CompTitle            color: #7788af; background: #242C33;
+hi CompTitle>*          color: #7788af; padding: 1px 0.5ex; padding: 1px 0.5ex;
+hi Filter               color: #ffffff; background: #ce5666; font-weight: bold;
+
+hi FrameIndicator       background-color: #cc5555; opacity: 0.5; z-index: 999; position: tewi; top: 0; bottom: 0; left: 0; right: 0;
+
+hi Bell                 font-family: tewi; font-size: 9pt; border: 0 none; background-color: black;
+hi ErrorMsg             color: #ff8888; font-family: tewi; font-size: 9pt; font-weight: normal;
+hi Hint::after          content: attr(number); font-size: 11px;
+hi HintActive           background: #80a673; color: #333333;
+hi HintElem             background-color: #ffaf5f; color: #000d18;
+hi HintImage            opacity: .5;
+hi InfoMsg              color: #ffffff; background: #242C33;
+hi Message              white-space: normal; min-width: 100%; padding-left: 2em; text-indent: -2em; display: block;
+hi WarningMsg           font-family: tewi; font-size: 9pt; color: #ce5666; background: #242C33;
+hi ModeMsg              font-family: tewi; font-size: 9pt; color: #ffffff; background: #242C33;
+hi MoreMsg              font-family: tewi; font-size: 9pt; color: #80a673; background: #242C33;
+hi NonText              font-family: tewi; font-size: 9pt; color: #80a673; min-height: 16px; padding-left: 2px;
+hi Question             font-family: tewi; font-size: 9pt; color: #80a673; background: #242C33; font-weight: bold;
+hi String               font-family: tewi; font-size: 9pt; color: #80a673; background: #242C33;
+hi Tag                  font-family: tewi; font-size: 9pt; color: #80a673; background: #242C33;
+hi Title                font-family: tewi; font-size: 9pt; color: #1f1f1f; background: #242C33; font-weight: bold;
+hi URL                  text-decoration: none; color: #80a673; background: inherit;
+hi URL:hover            text-decoration: underline; cursor: pointer;
+hi LineNr               font-family: tewi; font-size: 9pt; color: orange; background: #242C33;
+
+style -name statusbar chrome://* <<EOM
+#status-bar statusbarpanel { padding: 0 1px !important; }
+statusbarpanel > * { margin: 0 !important; padding: 0 2px 0 0 !important; }
+EOM
+
+" minimalistic tabs """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+style -name minitabs chrome://* <<EOM
+
+#nav-bar { display: none !important; }
+
+.tab-close-button {
+  display: none !important;
+}
+
+.tabs-newtab-button {
+  display: none !important;
+}
+
+.tabbrowser-tab .tab-icon-image
+    {visibility: hidden !important;}
+
+#appmenu-toolbar-button > .toolbarbutton-menu-dropmarker {
+  display: none !important;
+}
+
+#addon-bar {
+  max-height: 10px !important;
+  min-height: 10px !important;
+}
+
+TabsToolbar toolbarbutton {
+  -moz-appearance: none !important;
+  color: #ecedee !important;
+  background: black !important;   
+  border: none !important;
+  max-height: 10px !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+}
+
+TabsToolbar toolbarbutton {
+  display: none !important;
+}
+ 
+.tabbrowser-tabs {
+  background: #242C33 !important;
+}
+ 
+.tabbrowser-tab {
+  -moz-appearance: none !important;
+  border-radius: 0px !important;
+  background: #242C33 !important;
+  border: none !important;
+  color: #aaaaaa !important;
+  font-family: tewi;
+  font-size: 9pt !important;
+  height: 7px !important;
+  margin: 0 !important;
+  min-height: 0 !important;
+}
+ 
+.tabbrowser-tab:not([pinned]) {
+  max-width: 180px !important;
+  min-width: 160px !important;
+}
+
+.tabbrowser-tab:not([fadein]) {
+  max-width: 0px !important;
+  min-width: 0px !important;
+}
+
+.tabbrowser-tab:hover {
+  background: #242C33 !important;
+  color: #cacaca !important;
+}
+ 
+.tabbrowser-tab[selected] {
+  -moz-appearance: none !important;
+  background: #242C33 !important;
+  color: #ff797b !important;
+}
+
+personal-bookmarks {
+  -moz-appearance: none !important;
+  border: none !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  -moz-border-radius: 0 !important;
+}
+EOM

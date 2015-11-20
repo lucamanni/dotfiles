@@ -1,0 +1,9 @@
+#!/bin/zsh
+
+xsetroot -solid "#080808" -cursor_name left_ptr
+sudo modprobe -r psmouse
+nitrogen --restore
+xrdb -merge /home/luca/.Xdefaults
+#compton --backend glx --paint-on-overlay --vsync opengl-mswc -c -r 12 -l -15 -t -11 -G -b
+#udiskie -aNqs -f thunar &
+#pulseaudio --start &

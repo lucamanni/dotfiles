@@ -1,0 +1,6 @@
+#!/bin/zsh
+
+sudo xsetroot -solid "#080808" -cursor_name left_ptr
+sudo modprobe -r psmouse
+sudo modprobe -r btusb
+xrdb -merge /home/luca/.Xdefaults

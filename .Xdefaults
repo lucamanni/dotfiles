@@ -1,0 +1,154 @@
+!{{{ Colors
+#include "/home/luca/.colors/Terminal/colored"
+URxvt*.depth: 32
+URxvt*.background: [92]#080808
+!URxvt*.background: #080808
+URxvt*.foreground: #ecedee
+!}}}
+!{{{ Font Settings
+Xft.dpi:        92
+Xft.antialias:  True
+Xft.rgba:       rgb
+Xft.autohint:   False
+Xft.hinting:    True
+Xft.hintstyle:  auto
+Xft.lcdfilter:  lcddefault
+!}}}
+!{{{ Urxvt
+!{{{ Extensions
+URxvt.perl-lib:             /usr/lib/urxvt/perl
+URxvt.perl-ext-common:      default,matcher,url-select,keyboard-select
+URxvt.keysym.M-u:           perl:url-select:select_next
+URxvt.keysym.M-Escape:      perl:keyboard-select:activate
+URxvt.keysym.M-s:           perl:keyboard-select:search
+URxvt.url-launcher:         /usr/bin/firefox
+URxvt.url-select.launcher:  /usr/bin/firefox
+!URxvt.url-launcher:         /usr/bin/iron
+!URxvt.url-select.launcher:  /usr/bin/iron
+URxvt.underlineURLs:        True
+URxvt.urlButton:            1
+URxvt.colorUL:              #94738c
+URxvt.matcher.button:       1
+URxvt.matcher.pattern.1:    \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]
+URxvt.matcher.rend.0:       fg7
+!}}}
+!{{{ Font
+URxvt.font:         -misc-tamsyn-medium-*-*-*-14-*-*-*-*-*-*-*
+URxvt.boldFont:     -misc-tamsyn-bold-*-*-*-14-*-*-*-*-*-*-*
+!URxvt.boldFont:     -misc-tamsyn-bold-r-normal-*-15-*-*-*-*-*-iso8859-1
+!URxvt.font:         -*-clean-medium-r-normal-*-17-*-*-*-*-*-*-*
+!}}}
+!{{{ Options
+URxvt.internalBorder:       0
+URxvt.loginShell:           True
+URxvt.urgentOnBell:         True
+URxvt.colorMode:            on
+URxvt.cursorBlink:          True
+URxvt.cursorUnderline:      False
+URxvt.cursorColor:          #ffaf5f
+URxvt.underlineColor:       #5a667f
+URxvt.highlightColor:       #5a667f
+URxvt.highlightTextColor:   #000000
+URxvt.scrollBar:            False
+URxvt.borderless:           True
+URxvt.scrollstyle:          plain
+URxvt.scrollBar_right:      True
+URxvt.scrollColor:          #222222
+URxvt.geometry:             80x22
+!URxvt.geometry:            103x20
+URxvt.saveLines:            10000
+URxvt.buffered:             True
+!}}}
+!}}}
+!{{{ XApps
+!{{{ VncViewer
+Ssvnc*background:       #242c33
+Ssvnc*foreground:       #cacaca
+Ssvnc*font:             -misc-tamsyn-medium-r-normal-*-15-*-*-*-*-*-iso8859-1
+Vncviewer*background:   #242c33
+Vncviewer*foreground:   #cacaca
+Vncviewer*font:         -misc-tamsyn-medium-r-normal-*-15-*-*-*-*-*-iso8859-1
+!}}}
+!{{{ XCalc
+XCalc.background:                       #242c33
+XCalc.name:                             xcalc
+XCalc.geometry:                         250x325
+XCalc.ti.bevel.background:              #101010
+XCalc.ti.bevel.screen.background:       #000000
+XCalc.ti.bevel.screen.DEG.background:   #000000
+XCalc.ti.bevel.screen.DEG.foreground:   LightSeaGreen
+XCalc.ti.bevel.screen.GRAD.background:  #000000
+XCalc.ti.bevel.screen.GRAD.foreground:  LightSeaGreen
+XCalc.ti.bevel.screen.RAD.background:   #000000
+XCalc.ti.bevel.screen.RAD.foreground:   LightSeaGreen
+XCalc.ti.bevel.screen.INV.background:   #000000
+XCalc.ti.bevel.screen.INV.foreground:   Red
+XCalc.ti.bevel.screen.LCD.background:   #000000
+XCalc.ti.bevel.screen.LCD.foreground:   LightSeaGreen
+XCalc.ti.bevel.screen.LCD.shadowWidth:  0
+XCalc.ti.bevel.screen.M.background:     #000000
+XCalc.ti.bevel.screen.M.foreground:     LightSeaGreen
+XCalc.ti.bevel.screen.P.background:     #000000
+XCalc.ti.bevel.screen.P.foreground:     Yellow
+XCalc.ti.Command.foreground:            White
+XCalc.ti.Command.background:            #777777
+XCalc.ti.button5.background:            Orange3
+XCalc.ti.button19.background:           #611161
+XCalc.ti.button18.background:           #611161
+XCalc.ti.button20.background:           #611111
+XCalc.ti.button20.label:                /
+XCalc.ti.button25.background:           #722222
+XCalc.ti.button30.background:           #833333
+XCalc.ti.button35.background:           #944444
+XCalc.ti.button40.background:           #a55555
+XCalc.ti.button22.background:           #222262
+XCalc.ti.button23.background:           #222262
+XCalc.ti.button24.background:           #222272
+XCalc.ti.button27.background:           #333373
+XCalc.ti.button28.background:           #333373
+XCalc.ti.button29.background:           #333373
+XCalc.ti.button32.background:           #444484
+XCalc.ti.button33.background:           #444484
+XCalc.ti.button34.background:           #444484
+XCalc.ti.button37.background:           #555595
+XCalc.ti.button38.background:           #555595
+XCalc.ti.button39.background:           #555595
+XCalc.Cursor:                           hand2
+XCalc.ShapeStyle:                       rectangle
+XCalc.font:                             -misc-tamsyn-medium-r-normal-*-15-*-*-*-*-*-iso8859-1
+!}}}
+!{{{ XCursor
+XCursor.theme:  Vanilla-DMZ-AA
+XCursor.size:   13
+!}}}
+!{{{ XFontSel
+XFontSel*background:                                #242c33
+XFontSel*foreground:                                #cacaca
+XFontSel*menu*showUnselectable:                     false
+XFontSel*MenuButton.shadowWidth:                    0
+XFontSel*Toggle*ToggleStyle:                        check
+XFontSel*MenuButton*Justify:                        left
+XFontSel*MenuButton*MenuButtonStyle:                select
+xfontsel*Font:                                      -misc-tamsyn-medium-r-normal-*-15-*-*-*-*-*-iso8859-1
+xfontsel.pane.fieldBox.MenuButton.borderWidth:      1
+xfontsel.pane.fieldBox.MenuButton.internalHeight:   1
+xfontsel.pane.fieldBox.MenuButton.internalWidth:    2
+xfontsel.pane.fieldBox.MenuButton.shapeStyle:       rectangle
+!}}}
+!{{{ XLock
+XLock.echokeys:     True
+XLock.echokey:      *
+XLock.font:         -misc-tamsyn-medium-r-normal-*-15-*-*-*-*-*-iso8859-1
+XLock.boldFont:     -misc-tamsyn-bold-r-normal-*-15-*-*-*-*-*-iso8859-1
+!}}}
+!{{{ XMessage
+Xmessage*background:            #242c33
+Xmessage*foreground:            #cacaca
+Xmessage*font:                  -misc-tamsyn-medium-r-normal-*-15-*-*-*-*-*-iso8859-1
+Xmessage*form.*.shapeStyle:     rectangle
+Xmessage*Scrollbar.width:       1
+Xmessage*Scrollbar.borderWidth: 0
+Xmessage*Buttons:               Quit
+Xmessage*defaultButton:         Quit
+!}}}
+!}}}

@@ -1,0 +1,8 @@
+colorscheme i3
+
+set showstatuslinks=2
+
+map <C-S-Right> :tabmove! +1<CR>
+map <C-S-Left> :tabmove! -1<CR>
+map <C-Right> gt
+map <C-Left> gT
