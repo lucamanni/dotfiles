@@ -1,7 +1,5 @@
 #!/bin/sh
 
-notify-send -a "Available Updates" -u normal "$(yaourt -Qu)"
-sleep 1 && yaourt -Qu > ~/Documenti/updates
 yaourt -Syyua --noconfirm
 echo "==> Cleaning Kodi"
 sudo /bin/rm -rfv ~/.kodi/temp/*    		
