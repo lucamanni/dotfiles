@@ -39,5 +39,5 @@ sh ~/.scripts/datachrome
 echo
 sudo /bin/rm -rfv /var/lib/pacman/db.lck
 i3-msg restart
-notify-send -a "Done!" -u normal "Your system is updated"
+notify-send -a "Done!" -u normal "Maintenance completed!"
 sleep 2 && killall urxvt
