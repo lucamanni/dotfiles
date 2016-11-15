@@ -21,8 +21,8 @@ zstyle :compinstall filename '~/.zshrc'
 zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
 zstyle ':completion:*:warnings' format '%BSorry, no matches for:%b %d'
 export EDITOR="/usr/bin/vim" \
-	   BROWSER="/usr/bin/iron" \
-	   FILEMAN="/usr/bin/thunar2" \
+	   BROWSER="/usr/bin/chromium" \
+	   FILEMAN="/usr/bin/thunar" \
 	   PAGER="/usr/bin/most" \
        MANPAGER="/usr/bin/most" \
 	   LC="it_IT.UTF-8" \
@@ -73,6 +73,7 @@ unsetopt bgnice autoparamslash
 # }}}
 # }}}
 # {{{ Aliases
+alias quiz='virtualbox --restore-current /media/Dati/VirtualBox/Windows\ 7/Windows\ 7.vbox'
 # {{{ ASCII
 alias colorscheme='sh ~/.scripts/Colors/colorscheme'
 alias colors16='sh ~/.scripts/Colors/colors16'
@@ -126,6 +127,7 @@ alias iso2dvd='growisofs -dvd-compat -Z /dev/sr0='
 alias erase-dvd='dvd+rw-format /dev/sr0'
 # }}}
 # {{{ Directories
+alias i3='cd ~/.config/i3 && ll'
 alias apps='/usr/share/applications && ll'
 alias themes='/usr/share/themes && ll'
 alias icons='/usr/share/icons && ll'
@@ -184,6 +186,7 @@ alias running='sudo systemctl | grep running'
 alias stopped='sudo systemctl | grep stopped'
 # }}}
 # {{{ Managing
+alias yolo='sh /media/Dati/Github/dotfiles/.scripts/maintain'
 alias update='y -Syua'
 alias updatef='y -Syua --noconfirm'
 alias update-initramfs='sudo mkinitcpio -p linux'
@@ -199,6 +202,7 @@ alias infos='y -Qi'
 alias unlock='rm /var/lib/pacman/db.lck'
 alias symlinks='sh ~/.scripts/symlinks'
 alias brightness='cat /sys/class/backlight/acpi_video*/brightness'
+alias lightup='sudo sh .config/i3/scripts/light'
 alias rebuild='cd $HOME/.dwm/ && rm -r pkg src && makepkg -g >> PKGBUILD && makepkg -o && makepkg -efi'
 alias cronoff='sudo rm -rv /etc/cron.hourly/disconnect'
 alias cronon='sudo cp -Rv ~/.scripts/disconnect /etc/cron.hourly/'
@@ -214,6 +218,7 @@ alias umount-disk='sh ~/.scripts/umount-disk'
 alias umount-usb='sh ~/.scripts/umount-usb'
 # }}}
 # {{{ Multimedia
+alias streaming='sh ~/.scripts/streaming'
 alias setbg='eval $(cat ~/.fehbg)'
 #alias scrot='sh ~/.scripts/scrot'
 alias scrotd='sh ~/.scripts/scrotd'
@@ -310,21 +315,25 @@ alias setdnstor='sudo sh ~/.scripts/setdnstor'
 alias setdnsgoogle='sudo sh ~/.scripts/setdnsgoogle'
 alias restartwifi='sudo sh ~/.scripts/restartwifi'
 alias list-flash='sh ~/.scripts/list-flash'
-alias github='sh /media/Dati/Github/dotfiles/scripts/github'
+alias github='sh /media/Dati/Github/dotfiles/.scripts/github'
 alias w3mc='w3m -cookie'
 alias torrent='[ $(pidof rtorrent) ] && tmux attach -t Torrent || tmux new -s Torrent rtorrent'
 alias radio='tmux new -s radio radio'
 alias pandora='[ $(pidof pianobar) ] && tmux attach -t Pandora || tmux new -s Pandora pianobar'
 alias twitter='ttytter -ansi'
 alias download='plowdown -o /media/Data/Downloads'
-alias ie='translate it en'
-alias ei='translate en it'
-alias it='translate it de'
-alias ti='translate de it'
+alias ie='translate-shell -p -player /usr/bin/mplayer -s it -t en'
+alias ei='translate-shell -p -player /usr/bin/mplayer -s en -t it'
+#alias it='translate it de'
+#alias ti='translate de it'
 alias wlan0='slurm -i wlan0'
 alias eth0='slurm -i eth0'
 alias wificrack='cd /opt/wepcrackgui && ./wepcrack'
 alias google-earth='google-earth6 -fn -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso8859-9'
+# }}}
+# {{{ Xflux
+alias day='killall xflux && xflux -l 35 -g -139 -k 2000'
+alias night='killall xflux && xflux -l 40.6 -g 17.0 -k 2000'
 # }}}
 # }}}
 # {{{ Custom Prompt
@@ -495,8 +504,8 @@ installed () {
 
 cleanup () {
     echo "==> Cleaning Thumbnails"
-    sudo /bin/rm -rfv ~/.thumbnails/*
-    sudo /bin/rm -rfv /root/.thumbnails/*
+    #sudo /bin/rm -rfv ~/.thumbnails/*
+    #sudo /bin/rm -rfv /root/.thumbnails/*
     echo "==> Removing Flash Player Cache"
     sudo /bin/rm -rfv ~/.adobe/*
     sudo /bin/rm -rfv /root/.adobe/*
@@ -504,7 +513,7 @@ cleanup () {
     sudo /bin/rm -rfv /root/.macromedia/*
     echo "==> Cleaning Cache"
     #find /media/Winzoz/Users/Luca/Videos/Web\ Cam/ -name '*.jpg' -print0 | xargs -0 /bin/rm -rfv
-    sudo /bin/rm -rfv ~/.cache/*
+    #sudo /bin/rm -rfv ~/.cache/*
     sudo /bin/rm -rfv /root/.cache/*
     sudo /bin/rm -rfv ~/.dvdcss/*
     sudo /bin/rm -rfv ~/.thunderbird/*.default/ImapMail/*
@@ -530,6 +539,7 @@ config () {
         awesome)    $EDITOR ~/.config/awesome/rc.lua ;;
         awesomebig) $EDITOR ~/.config/awesome/rc_BIG.lua ;;
         awesomesmall) $EDITOR ~/.config/awesome/rc_SMALL.lua ;;
+        bar)        $EDITOR ~/.config/i3/scripts/i3barconky ;;
         boot)       sudo $EDITOR /boot/grub/grub.cfg ;;
         chat)       $EDITOR ~/.weechat/weechat.conf ;;
         colors)     $EDITOR ~/.colors/Terminal/colored ;;
@@ -583,7 +593,7 @@ config () {
         urxvt)      $EDITOR ~/.Xdefaults ;;
         vim)        $EDITOR ~/.vimrc ;;
         vim-color)  $EDITOR /usr/share/vim/vim74/colors/colored.vim ;;
-        vimperator) $EDITOR ~/.vimperator/colors/awesome.vimp ;;
+        vimperator) $EDITOR ~/.vimperator/colors/i3.vimp ;;
         wyrd)       $EDITOR ~/.wyrdrc ;;
         xinit)      $EDITOR ~/.xinitrc ;;
 		xorg)		sudo $EDITOR /etc/X11/xorg.conf ;;
@@ -703,8 +713,8 @@ optimize () {
     sudo updatedb
     echo  "==> Optimizing Firefox"
     sh ~/.scripts/datafox
-    #echo  "==> Optimizing Chromium"
-    #sh ~/.scripts/datachrome
+    echo  "==> Optimizing Chromium"
+    sh ~/.scripts/datachrome
     echo
 }
 
@@ -774,8 +784,7 @@ update-clock () {
 #alias vim='vim_font'
 
 # }}}
-# }}}
-#z {{{ Startup Functions
+# {{{ Startup Functions
 
 #fortune all
 #fortune | cowsay -f tux
@@ -784,4 +793,5 @@ update-clock () {
 #color-blocks
 #color-block
 
+# }}}
 # }}}
